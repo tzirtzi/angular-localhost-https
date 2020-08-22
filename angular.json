@@ -66,6 +66,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+            "ssl": true,
+            "sslKey": "/node_modules/browser-sync/certs/server.key",
+            "sslCert": "/node_modules/browser-sync/certs/server.crt",
             "browserTarget": "angular-localhost-https:build"
           },
           "configurations": {
@@ -123,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-localhost-https"
+    }
+  },
+  "defaultProject": "angular-localhost-https",
+  "cli": {
+    "analytics": "249fa4e2-203b-4bd9-9c9e-93e46d23d80a"
+  }
 }
